@@ -62,12 +62,14 @@
         "queries": {
             "boneSizeQuery": "The Bone Size",
             "durationQuery": "Duration",
-            "ownershipQuery": "Collectively held?",
+            "ownershipQuery": "Collective",
             "oneAncestryQuery": "Ancestry",
             "firstAncestryQuery": "Primary Ancestry",
             "secondAncestryQuery": "Secondary Ancestry",
             "planetouchedQuery": "Planetouched",
-            "languagesQuery": "Languages"
+            "languagesQuery": "Languages",
+            "characteristicQuery": "Characteristics",
+            "limitQuery": "Limits"
         },
         "values": {
             "aeg": "Aegis",
