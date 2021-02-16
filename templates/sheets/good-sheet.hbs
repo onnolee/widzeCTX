@@ -1,0 +1,29 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <th>{{localize "widzeCTX.durationLength.durationLimit"}}</th>
+                <th>{{localize "widzeCTX.ownership.ownershipQuery"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="data.duration">
+                        {{#select data.duration}}
+                        {{#each config.durations as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.collective" type="checkbox" {{checked data.collective}} />
+                </td>
+            </tr>
+        </table>
+        <textarea name="data.description">{{data.description}}</textarea>
+    </div>
+</form>

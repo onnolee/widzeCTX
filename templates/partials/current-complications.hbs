@@ -1,0 +1,14 @@
+<section class=currentComplications>
+    <div> 
+        <h2>
+            <div>{{localize "widzeCTX.sheet.currentComplications"}}</div>
+            <a class="item-create" data-type="complication" title="{{localize "widzeCTX.sheet.addComplication"}}">
+                <i class="fas fa-plus"></i>
+            </a>"
+        </h2>
+    </div>
+    {{#each complications as |complication id|}}
+    <div class="complication-item item" data-item-id="{{complication._id}}">
+        <input class="complication-name inline-edit" data-field="name" type="text" value="{{complication.name}}"
+    </div>
+</section>

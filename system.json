@@ -1,0 +1,28 @@
+{
+    "name": "widzeCTX",
+    "title": "Widze Cortex",
+    "description": "An adaptation of Cortex Prime for the planet of Widze.",
+    "author": "Onnolee Wierson",
+    "version": 0.01,
+    "minimumCoreVersion": "0.6.4",
+    "compatibleCoreVersion": "0.7.0",
+    "esmodules": [
+        "widzeCTX.js"
+    ],
+    "styles":[
+        "widzeCTX.css"
+    ],
+    "packs":[
+
+    ],
+    "languages":[
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "gridDistance": 3,
+    "gridUnites": "ft",
+    "primaryTokenAttribute": "lots"
+}

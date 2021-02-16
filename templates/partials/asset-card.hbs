@@ -1,0 +1,18 @@
+<div class="asset-card">
+    <div class="asset-name">
+        <p>{{name}}</p>
+    </div>
+    <div class="asset-bone">
+        {{#if data.bone == "tall"}}
+        <img src="systems/widzeCTX/icons/d6_vector.png" height="50">
+        {{else}} {{#if data.bone == "grande"}}
+        <img src="systems/widzeCTX/icons/d8_vector.png" height="50">
+        {{else}} {{#if data.bone == "venti"}}
+        <img src="systems/widzeCTX/icons/d10_vector.png" height="50">
+        {{else}} {{#if data.bone == "trenta"}}
+        <img src="systems/widzeCTX/icons/d12_vector.png" height="50">
+        {{else}} {{#if data.bone == "short"}}
+        <img src="systems/widzeCTX/icons/d4_vector.png" height="50">
+        {{/if}} {{/if}} {{/if}} {{/if}} {{/if}}
+    </div>
+</div>

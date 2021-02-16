@@ -1,0 +1,152 @@
+{
+    "Actor":{
+        "types":[
+            "player",
+            "npc",
+            "dmc"
+        ],
+        "templates":{
+            "characterDescription":{
+                "physicalAppearance": "",
+                "pronouns": "anyPronouns",
+                "oneAncestry": "human",
+                "mixed": false,
+                "firstAncestry": false,
+                "secondAncestry": false,
+                "planetouched": false,
+                "languages": "common"
+            },
+            "valueBase":{
+                "aeg": {
+                    "bone": "tall",
+                    "woe": "none"
+                },
+                "chu": {
+                    "bone":"tall",
+                    "woe":"none"
+                },
+                "glo": {
+                    "bone":"tall",
+                    "woe":"none"
+                },
+                "int": {
+                    "bone":"tall",
+                    "woe":"none"
+                },
+                "rev": {
+                    "bone":"tall",
+                    "woe":"none"
+                },
+                "won": {
+                    "bone":"tall",
+                    "woe":"none"
+                }
+            }
+        },
+        "player":{
+            "templates":["characterDescription","valueBase"],
+            "sfx": false,
+            "abilities": false,
+            "lots": {
+                "value": 0,
+                "max": 100
+            },
+            "currency": {
+                "pp": 0,
+                "gp": 0,
+                "sp": 0,
+                "cp": 0
+            },
+            "skills": {
+                "agi": {
+                    "bone": "short"
+                },
+                "awa": {
+                    "bone": "short"
+                },
+                "clo": {
+                    "bone":"short"
+                },
+                "cra": {
+                    "bone":"short"
+                },
+                "dea": {
+                    "bone":"short"
+                },
+                "dip": {
+                    "bone":"short"
+                },
+                "end": {
+                    "bone":"short"
+                },
+                "hea": {
+                    "bone":"short"
+                },
+                "lor": {
+                    "bone":"short"
+                },
+                "lur": {
+                    "bone":"short"
+                },
+                "pan": {
+                    "bone":"short"
+                },
+                "slu": {
+                    "bone":"short"
+                },
+                "str": {
+                    "bone":"short"
+                },
+                "the": {
+                    "bone":"short"
+                }
+            },
+            "specialties": {
+                "inv": {
+                    "bone":"tall",
+                    "skill":"cra"
+                }
+            }
+
+        },
+        "npc":{
+            "templates":["valueBase"],
+            "sfx":false
+        }
+    },
+    "Item":{
+        "types":[
+            "asset",
+            "good",
+            "complication",
+            "distinction",
+            "ability"
+        ],
+        "templates":{
+            "itemDescription":{
+                "description": ""
+            }
+        },
+        "asset":{
+            "templates":["itemDescription"],
+            "bone": "tall",
+            "duration": "scene",
+            "collective": false,
+            "sfx": false
+        },
+        "good":{
+            "templates":["itemDescription"],
+            "duration": "scene",
+            "collective": false
+        },
+        "complication":{
+            "templates":["itemDescription"],
+            "bone": "tall",
+            "duration": "scene",
+            "collective": false,
+            "characteristic": false,
+            "limit": false,
+            "trauma": false
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.widzeCTX.sheet.player .sheetBackground {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 150px;
+  grid-template-rows: 200px repeat(4, 1fr);
+  column-gap: 3%;
+  row-gap: 5px;
+  background-color: #ff7a9b38;
+  height: 100%;
+  width: 100%;
+}
+.widzeCTX.sheet.player .rightBar {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-color: ghostwhite;
+}
+.widzeCTX.sheet.player .actor-img {
+  padding-top: 15px;
+  width: 100px;
+  border-radius: 40px;
+  border: 5px salmon;
+}
+.widzeCTX.sheet.player .assetBlock {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: ghostwhite;
+}
