@@ -3,9 +3,9 @@
     "title": "Widze Cortex",
     "description": "An adaptation of Cortex Prime for the planet of Widze.",
     "author": "Onnolee Wierson",
-    "version": 0.01,
-    "minimumCoreVersion": "0.6.4",
-    "compatibleCoreVersion": "0.7.0",
+    "version": 0.02,
+    "minimumCoreVersion": "0.8.0",
+    "compatibleCoreVersion": "0.8.0",
     "esmodules": [
         "widzeCTX.js"
     ],

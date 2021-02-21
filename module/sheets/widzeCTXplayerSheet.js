@@ -11,6 +11,7 @@ export default class widzeCTXplayerSheet extends ActorSheet {
         const data = super.getData();
         data.config = CONFIG.widzeCTX;
         data.assets = data.items.filter(function (item) {return item.type == "asset"});
+        data.complications = data.items.filter(function (item) {return item.type == "complication"});
         return data;
     }
     
@@ -39,7 +40,7 @@ export default class widzeCTXplayerSheet extends ActorSheet {
         event.preventDefault();
         let element = event.currentTarget;
         let itemId = element.closest(".item").dataset.itemId;
-        let item = this.actor.getOwnedItem(itemId);
+        let item = this.items.get(itemId);
         let field = element.dataset.field;
 
         return item.update({ [field]: element.value });
@@ -50,11 +51,11 @@ export default class widzeCTXplayerSheet extends ActorSheet {
         let element = event.currentTarget;
 
         let itemData = {
-            name: game.i18n.localize("widzeCTX.sheet.newAsset"),
+            name: game.i18n.localize("widzeCTX.sheet.newItem"),
             type: element.dataset.type
         }
 
-        return this.actor.createOwnedItem(itemData);
+        return this.createEmbeddedDocuments("Item", [itemData]);
 
     }
 }

@@ -83,10 +83,12 @@
   background-color: whitesmoke;
 }
 .widzeCTX.sheet.player .asset-block h2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   background-color: salmon;
+  display: flex;
+  justify-content: space-between;
+}
+.widzeCTX.sheet.player .asset-block .assetrow {
+  display: flex;
 }
 .widzeCTX.sheet.complication form {
   display: flex;
@@ -99,4 +101,27 @@
 }
 .widzeCTX.sheet.complication .sheet-content .editor {
   height: 100%;
+}
+.widzeCTX.sheet.player .currentComplications {
+  background-color: ghostwhite;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.widzeCTX.sheet.player .currentComplications h2 {
+  border-bottom: 0px;
+}
+.widzeCTX.sheet.player .currentComplications .playerComplications .complication-item {
+  display: inline-block;
+  margin: 3px;
+  background: rgba(0, 0, 0, 0.7);
+  color: ghostwhite;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 10px;
+  transition: color 0.5s;
+}
+.widzeCTX.sheet.player .currentComplications .playerComplications .complication-item:hover {
+  color: salmon;
 }

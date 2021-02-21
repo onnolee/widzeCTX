@@ -8,7 +8,7 @@
         </h2>
     </div>
     {{#each assets as |asset id|}}
-    <div class="asset-item item" data-item-id="{{asset._id}}">
+    <div class="assetrow" data-item-id="{{asset._id}}">
         <input class="asset-name inline-edit" data-field="name" type="text" value="{{asset.name}}" placeholder="{{localize "widzeCTX.sheet.newAssetName"}}" />
         <select class="boneSizeDropdown" name="data.bone" data-field="data.bone" type="text">
             {{#select data.bone}}

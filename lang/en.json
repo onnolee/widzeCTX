@@ -11,6 +11,7 @@
             "upSkill": "Increase the Size of this Skill",
             "upSpecialty": "Increase the Size of this Specialty",
             "upExpertise": "Increase the Size of this Expertise",
+            "currentComplications": "Active Complications",
             "endComplicationPersonal": "Remove this Complication for Yourself",
             "endComplicationCollective": "Remove this Complication for your Group",
             "addComplicationPersonal": "Add a Complication for Yourself",

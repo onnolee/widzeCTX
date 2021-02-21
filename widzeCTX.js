@@ -7,7 +7,8 @@ async function preloadHandlebarsTemplates() {
         "systems/widzeCTX/templates/partials/character-values.hbs",
         "systems/widzeCTX/templates/partials/asset-card.hbs",
         "systems/widzeCTX/templates/partials/asset-block.hbs",
-        "systems/widzeCTX/templates/partials/bone-selector.hbs"
+        "systems/widzeCTX/templates/partials/bone-selector.hbs",
+        "systems/widzeCTX/templates/partials/current-complications.hbs"
     ];
 
     return loadTemplates(templatePaths);
